@@ -13,6 +13,10 @@ body {
 
 }
 
+/* -------------------------------------------------------------
+    Header + Nav
+   -------------------------------------------------------------
+*/
 #btn-nav {
     font-family: 'Inconsolata', monospace;
 
@@ -28,4 +32,27 @@ button i {
 
 button span {
     font-size: 0.7rem;
+}
+
+
+/* -------------------------------------------------------------
+    Hero section
+   -------------------------------------------------------------
+*/
+
+div.jumbotron h2 span.purple {
+    color:#6272a4 ;
+}
+div.jumbotron h2 span.pink {
+    color:#ff79c6 ;
+}
+
+div.jumbotron .img-fluid {
+    z-index: 2;
+}
+
+.wave {
+    z-index: 1;
+    position: relative;
+    top:-170px;
 }
