@@ -21,18 +21,28 @@ body {
     my universal styles
    -------------------------------------------------------------
 */
-.hero-bg {
-    background-repeat: no-repeat;
+
+.parallax {
+    background-image: var(--main-bg-img);
+    min-height: 980px;
+
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+}
+.hero-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bg-theme{
     background-color: #282a36; 
-    background: var(--main-bg-img);
+    background-image: var(--main-bg-img);
 }
 .banner-large{
-    height: 980px;
+    min-height: 980px;
 }
 .op-sans {
     font-family: var(--secondary-font);
@@ -40,6 +50,11 @@ body {
 
 .pink {
     color: var(--main-link-color);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
 
 /* -------------------------------------------------------------
@@ -125,9 +140,16 @@ svg:not(:root){
     font-size: 13px;
     letter-spacing: 1px;
     font-weight: 700;
+    transition: all 0.3s ease;
+}
+.about .btn:hover {
+    background-color: #000 !important;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 1px 1px rgba(204, 204, 204, 0.493); 
 }
 /* -------------------------------------------------------------
-    App Info Section
+    App Download Section
    -------------------------------------------------------------
 */
 
@@ -135,15 +157,25 @@ svg:not(:root){
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.feature-content h5 {
-    text-align: center;
+
+.app-download a.btn {
+    background-color: var(--main-link-color);
+    padding: 16px 25px;
+    border: 1px solid #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    min-width: 180px;
+    transition: all 0.3s ease;
 }
-.app-feature-title i {
-    display: block;
+
+.app-download a.btn:hover{
+    background-color: rgb(0, 255, 136);
+    transform: translateY(-5px);
 }
-.app-feature-title h2 i {
-    text-align: center;
-}
+
+.app-download a.btn span {
+
 
 
 /* -------------------------------------------------------------
@@ -151,7 +183,4 @@ svg:not(:root){
    -------------------------------------------------------------
 */
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
+
