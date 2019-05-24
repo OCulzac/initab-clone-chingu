@@ -203,3 +203,11 @@ h5.app-feature-title {
     App Features section
    -------------------------------------------------------------
 */
+
+section.theme-jumbo {
+    padding: 100px 0;
+}
+
+section.theme-jumbo h2 {
+    font-weight: 700;
+}
