@@ -9,20 +9,44 @@
 }
 
 body {
-    background: var(--main-bg-img);
-    background-repeat: no-repeat;
-    background-size: cover;
+
     font-family: var(--main-font);
     background-color: var(--main-bg-color) ;
+    font-size: 14px;
+    line-height: 24px;
+    color: #757575;
+}
+
+/* -------------------------------------------------------------
+    my universal styles
+   -------------------------------------------------------------
+*/
+.hero-bg {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.bg-theme{
+    background-color: #282a36; 
+    background: var(--main-bg-img);
+}
+.banner-large{
+    height: 980px;
+}
+.op-sans {
+    font-family: var(--secondary-font);
+}
+
+.pink {
+    color: var(--main-link-color);
 }
 
 /* -------------------------------------------------------------
     Header + Nav
    -------------------------------------------------------------
 */
-a.btn > i {
-    color: var(--main-link-color);
-}
+
 
 .header .btn {
     font-size: 12px;
@@ -33,28 +57,44 @@ a.btn > i {
     Hero section
    -------------------------------------------------------------
 */
-
+div.jumbotron.bg-transparent {
+    position: relative;
+}
+div.jumbotron {
+    margin-bottom: 0;
+}
+div.jumbotron h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+div.jumbotron h6 {
+    font-size: 16px;
+    font-weight: 300;
+}
 div.jumbotron h2 span.purple {
     color:#6272a4 ;
 }
 div.jumbotron h2 span.pink {
-    color:#ff79c6 ;
+    color:var(--main-link-color) ;
 }
-
+div.jumbotron .image {
+    padding-top: 60px;
+}
 div.jumbotron .img-fluid {
     z-index: 2;
 }
 
 div.wave {
-    position: relative;
-    max-width: 100vw;
+    position: absolute;
+    width: 100%;
     height: auto;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
-div.wave svg {
-    position: absolute;
-    bottom: 0.0em;
-    z-index: -1;
+svg:not(:root){
+    overflow: hidden;
 }
 
 
@@ -63,6 +103,10 @@ div.wave svg {
    -------------------------------------------------------------
 */
 
+.app-download {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .feature-content h5 {
     text-align: center;
 }
