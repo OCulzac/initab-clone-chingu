@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans&display=swap');
 
 :root {
-    --main-bg-img: url('/images/texture.png');
+    --main-bg-img: url('images/texture.png');
     --main-bg-color: #282a36;
     --main-link-color: #ff79c6 ;
     --main-font: 'Inconsolata', monospace;
