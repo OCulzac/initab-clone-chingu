@@ -22,15 +22,7 @@ body {
    -------------------------------------------------------------
 */
 
-.parallax {
-    background-image: var(--main-bg-img);
-    min-height: 980px;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .hero-bg {
     background-attachment: fixed;
     background-position: center;
@@ -42,7 +34,7 @@ body {
     background-image: var(--main-bg-img);
 }
 .banner-large{
-    min-height: 980px;
+    min-height: 880px;
 }
 .op-sans {
     font-family: var(--secondary-font);
@@ -55,6 +47,7 @@ body {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    z-index: 2;
 }
 
 /* -------------------------------------------------------------
@@ -62,11 +55,9 @@ body {
    -------------------------------------------------------------
 */
 
-
 .header .btn {
     font-size: 12px;
 }
-
 
 /* -------------------------------------------------------------
     Hero section
@@ -105,7 +96,7 @@ div.wave {
     height: auto;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 svg:not(:root){
